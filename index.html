@@ -1,0 +1,25 @@
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THPTQG</title>
+</head>
+<body>
+    <div id="current-time"></div>
+</body>
+<script>
+    var curDate = new Date();
+      
+    // Ngày hiện tại
+    var curDay = curDate.getDate();
+ 
+    // Tháng hiện tại
+    var curMonth = curDate.getMonth() + 1;
+      
+    // Năm hiện tại
+    var curYear = curDate.getFullYear();
+ 
+    // Gán vào thẻ HTML
+    document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
+</script>
+</html>
