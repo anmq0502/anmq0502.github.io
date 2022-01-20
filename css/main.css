@@ -1,10 +1,43 @@
+@font-face {
+    font-family:"Potta One";
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src:url("https://fonts.gstatic.com/s/pottaone/v6/FeVSS05Bp6cy7xI-YfxQ2J5hm24c1sY_XjjYC1QMPbpH11Hj8t620eOL.59.woff2") format("woff2");
+   }
+@font-face {
+    font-family:"Potta One";
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src:url("https://fonts.gstatic.com/s/pottaone/v6/FeVSS05Bp6cy7xI-YfxQ2J5hm24c1sY_XjjYC1QMPbpH11Hj8t620eOL.117.woff2") format("woff2");
+   }
+@font-face {
+    font-family:"Potta One";
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src:url("https://fonts.gstatic.com/s/pottaone/v6/FeVSS05Bp6cy7xI-YfxQ2J5hm24c1sY_XjjYC1QMPbpH11Hj8t620eOL.118.woff2") format("woff2");
+   }
+@font-face {
+    font-family:"Potta One";
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src:url("https://fonts.gstatic.com/s/pottaone/v6/FeVSS05Bp6cy7xI-YfxQ2J5hm24c1sY_XjjYC1QMPbpH11Hj8t620eOL.119.woff2") format("woff2");
+   }
+body{
+    /* background-color: #FF4136; */
+
+}
 div{  
     /* background-color: #FF4136; */
-    width: 310px;
+    width: 590px;
     height: 300px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-family: cursive;
+    font-family: "Potta One", cursive;
+    text-transform:uppercase;
 }
