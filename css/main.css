@@ -26,13 +26,9 @@
     font-display:swap;
     src:url("https://fonts.gstatic.com/s/pottaone/v6/FeVSS05Bp6cy7xI-YfxQ2J5hm24c1sY_XjjYC1QMPbpH11Hj8t620eOL.119.woff2") format("woff2");
    }
-body{
-    /* background-color: #FF4136; */
-
-}
 div{  
     /* background-color: #FF4136; */
-    width: 610px;
+    width: auto;
     height: 300px;
     position: absolute;
     left: 50%;
@@ -40,4 +36,24 @@ div{
     transform: translate(-50%, -50%);
     font-family: "Potta One", cursive;
     text-transform:uppercase;
+}
+.button{
+    width: auto;
+    height: 100px;
+    position: absolute;
+    font-family: "Potta One", cursive;
+    text-transform:uppercase;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.knowledge{
+    width: auto;
+    height: 100px;
+    position: absolute;
+    font-family: "Potta One", cursive;
+    text-transform:uppercase;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
 }

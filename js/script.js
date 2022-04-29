@@ -1,6 +1,8 @@
 var mydata = JSON.parse(data);
 var select = -1;
 var main_vocb;
+var arrayDiv;
+
 function getCountdown(){
     var curDate = new Date();
     var xmasDay = new Date(curDate.getFullYear(), 6, 8); 
@@ -121,3 +123,61 @@ function click_Btn_Next(){
     document.getElementsByClassName("box")[0].style.display = ""; 
     Objective_Test();
 }
+
+function randomSetColor(){
+    var symbols, color;
+    var array = document.getElementsByTagName("div");
+    for (var i = 0; i < array.length; i++) {
+        var element = array[i];
+        symbols = "0123456789ABCDEF";
+        color = "#";
+        for (let index = 0; index < 6; index++) {
+            color = color + symbols[Math.floor(Math.random() * 16)];
+        }
+        element.style.background = color;
+        // console.log(u + " " + color);
+    }
+}
+
+function loadAllDiv(){
+    for (let i = 0; i < mydata.length; i++) {
+        var newDiv = document.createElement("div");
+        var newH2 = document.createElement("h2");
+        var newP = document.createElement("p");
+        document.body.appendChild(newDiv);
+        newDiv.appendChild(newH2);
+        newDiv.appendChild(newP);
+        newDiv.appendChild(newP);
+        newDiv.appendChild(newP);
+    }
+    arrayDiv = document.getElementsByTagName("div");
+    // newDiv.className = "aClassName";
+    // newDiv.createElement("h2");
+}
+
+function SetAllVocb(){
+    console.log(arrayDiv.length);
+    for (let i = 0; i < arrayDiv.length; i++) {
+        const element = arrayDiv[i];
+        let random_main = Math.floor(Math.random() * mydata.length);
+        main_vocb = mydata[random_main];
+        let vocb =  mydata[random_main].tu;
+        let nghia =  mydata[random_main].nghia;
+        element.getElementsByTagName("h2")[0].innerHTML = vocb;
+        element.getElementsByTagName("p")[0].innerHTML = nghia;
+        // element.getElementsByTagName("p")[1].innerHTML = vocb;
+        // element.getElementsByTagName("p")[2].innerHTML = vocb;
+        removeItemOnce(mydata, main_vocb);
+
+    }
+    // console.log(removeItemOnce(mydata, main_vocb));
+
+}
+
+function removeItemOnce(arr, value) {
+    var index = arr.indexOf(value);
+    if (index > -1) {
+      arr.splice(index, 1);
+    }
+    return arr;
+  }
