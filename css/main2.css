@@ -1,3 +1,13 @@
+@media only screen and (max-width: 320px) {
+  body {
+      transform: translate(25%)
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+      transform: translate(15%);
+  }
+}
 div{
     height: 150px;
     width: 150px;
