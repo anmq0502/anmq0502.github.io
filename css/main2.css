@@ -1,6 +1,6 @@
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
     body{
-        transform: translate(70px);
+        transform: translate(10px);
     }
 }
 @media only screen and (max-width: 480px) {
@@ -8,9 +8,9 @@
         transform: translate(40px);
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 320px) {
     body{
-        transform: translate(10px);
+        transform: translate(70px);
     }
 }
 div{
