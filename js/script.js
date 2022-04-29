@@ -143,12 +143,12 @@ function loadAllDiv(){
     for (let i = 0; i < mydata.length; i++) {
         var newDiv = document.createElement("div");
         var newH2 = document.createElement("h2");
-        var newP = document.createElement("p");
         document.body.appendChild(newDiv);
         newDiv.appendChild(newH2);
-        newDiv.appendChild(newP);
-        newDiv.appendChild(newP);
-        newDiv.appendChild(newP);
+        for (let index = 0; index < 2; index++) {
+            var newP = document.createElement("p");
+            newDiv.appendChild(newP);
+        }
     }
     arrayDiv = document.getElementsByTagName("div");
     // newDiv.className = "aClassName";
