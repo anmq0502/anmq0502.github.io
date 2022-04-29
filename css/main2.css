@@ -3,6 +3,12 @@
       transform: translate(25%)
   }
 }
+
+@media only screen and (max-width: 480px) {
+  body {
+      transform: translate(10%);
+}
+  
 @media only screen and (max-width: 600px) {
   body {
       transform: translate(15%);
