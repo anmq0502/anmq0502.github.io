@@ -162,10 +162,11 @@ function SetAllVocb(){
         let random_main = Math.floor(Math.random() * mydata.length);
         main_vocb = mydata[random_main];
         let vocb =  mydata[random_main].tu;
+        let tuloai =  mydata[random_main].t_loai;
         let nghia =  mydata[random_main].nghia;
         element.getElementsByTagName("h2")[0].innerHTML = vocb;
-        element.getElementsByTagName("p")[0].innerHTML = nghia;
-        // element.getElementsByTagName("p")[1].innerHTML = vocb;
+        element.getElementsByTagName("p")[0].innerHTML = tuloai;
+        element.getElementsByTagName("p")[1].innerHTML = nghia;
         // element.getElementsByTagName("p")[2].innerHTML = vocb;
         removeItemOnce(mydata, main_vocb);
 
