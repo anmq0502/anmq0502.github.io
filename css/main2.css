@@ -1,18 +1,17 @@
 @media only screen and (max-width: 320px) {
-  body {
-      transform: translate(25%)
-  }
+    body{
+        transform: translate(70px);
+    }
 }
-
 @media only screen and (max-width: 480px) {
-  body {
-      transform: translate(10%);
+    body{
+        transform: translate(40px);
+    }
 }
-  
 @media only screen and (max-width: 600px) {
-  body {
-      transform: translate(15%);
-  }
+    body{
+        transform: translate(10px);
+    }
 }
 div{
     height: 150px;
@@ -20,8 +19,8 @@ div{
     /* border: 2px solid black; */
     padding: 2%;
     float: left;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-bottom: 40px;
     background: red;
     text-transform: capitalize;
     line-height: 7px;
